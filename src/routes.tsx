@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home.js";
-import MyProfile from "./MyProfile.tsx";
+import MyProfile from "./MyProfile.js";
 
 export default function AppRoutes() {
   return (
