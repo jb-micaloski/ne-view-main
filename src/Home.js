@@ -8,8 +8,7 @@ const backgroundStyle = {
   backgroundSize: "cover", // dimensionamento da imagem
   display: "flex",
   justifyContent: "center",
-  backgroundColor: "black",
-  alignItems: "middle"
+  backgroundColor: "black"
 };
 
 const textStyle = {
@@ -18,12 +17,16 @@ const textStyle = {
   width: "auto",
   borderRadius: "10%",
   backgroundColor: "rgb(142, 141, 148)"
-  
 };
 
 const linkStyle = {
   textDecoration: "none", // removendo sublinhado do link
-  color: "blue" // definindo cor antes do clique
+  color: "blue", // definindo cor antes do clique
+  alignItems: "center",
+  height: "auto",
+  width: "auto",
+  borderRadius: "10%",
+  backgroundColor: "rgb(142, 141, 148)"
 };
 
 const activeLinkStyle = {
@@ -33,14 +36,24 @@ const activeLinkStyle = {
 export default class Home extends React.Component {
   render() {
     return (
-      <div style={backgroundStyle}>
-        <div style={textStyle}>
-          <h1>BEM VINDO AO NE BRASIL</h1>
-          <h1>
-            <Link to="/profile" style={linkStyle} activeStyle={activeLinkStyle}>INICIAR VISITA GUIADA</Link>
-          </h1>
-        </div>
-      </div>
+      <table style={backgroundStyle}>
+        <tbody>
+          <tr style={{ verticalAlign: "middle", textAlign: "center" }}>
+            <td style={textStyle}>
+              <h1>BEM VINDO AO NE BRASIL</h1>
+            </td>
+          </tr>
+          <tr style={{ verticalAlign: "middle", textAlign: "center" }}>
+            <td>
+              <h1>
+                <Link to="/profile" style={linkStyle} activeStyle={activeLinkStyle}>
+                  INICIAR VISITA GUIADA
+                </Link>
+              </h1>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     );
   }
 }
