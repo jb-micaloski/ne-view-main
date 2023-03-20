@@ -23,11 +23,21 @@
   width: 30px;
   border-radius: 25%;
   opacity: 0.7;
-  background: rgb(5, 1, 255);
+  background: rgb(142, 141, 148);
   cursor: grab;
 }
 
 #mypanorama {
   width: 100%;
   height: 100%;
+}
+
+body {
+  background-image: url(https://tecnodefesa.com.br/wp-content/uploads/2016/08/Imagem-1-N.E.Brasil-35anos.jpg);
+  background-size: cover;
+  height: 80%;
+}
+
+.link {
+  color: red;
 }
