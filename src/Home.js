@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography, Box, Button } from "@mui/material";
+import MyProfile from "./MyProfile.js";
 
 export default function Home() {
   const styles = {
@@ -24,7 +25,7 @@ export default function Home() {
   };
 
   return (
-    <div ref={mountRef}>
+    <div>
       <Box style={back}>
         <Box style={{ padding: "5px" }}>
           <Box style={typography}>
@@ -35,9 +36,10 @@ export default function Home() {
           <Box style={typography}>
             <Typography style={styles}>VIRTUAL TOUR</Typography>
           </Box>
-          <Box></Box>
+          <Box>
+          </Box>
           <Box style={{ padding: "5px" }}>
-            <Button style={styles} variant="contained">
+            <Button href="/profile" style={styles} variant="contained">
               Start
             </Button>
           </Box>
