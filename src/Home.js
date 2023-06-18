@@ -1,59 +1,51 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Typography, Box, Button} from "@mui/material";
 
-const backgroundStyle = {
-  backgroundImage:
-    "url(https://tecnodefesa.com.br/wp-content/uploads/2016/08/Imagem-1-N.E.Brasil-35anos.jpg)",
-  height: "auto", // altura da página
-  backgroundSize: "cover", // dimensionamento da imagem
-  display: "flex",
-  justifyContent: "center",
-  backgroundColor: "black"
-};
+export default function Home() {
 
-const textStyle = {
-  alignItems: "center",
-  height: "auto",
-  width: "auto",
-  borderRadius: "10%",
-  backgroundColor: "rgb(142, 141, 148)"
-};
 
-const linkStyle = {
-  textDecoration: "none", // removendo sublinhado do link
-  color: "blue", // definindo cor antes do clique
-  alignItems: "center",
-  height: "auto",
-  width: "auto",
-  borderRadius: "10%",
-  backgroundColor: "rgb(142, 141, 148)"
-};
+  const styles = {
+    "font-family": "'Baloo Bhaijaan', cursive",
+    "font-size": "30px",
+    padding: "5px",
+    color: "white",
+  };
 
-const activeLinkStyle = {
-  color: "red" // definindo cor durante o clique
-};
+  const back = {
+    height: "100vh",
+    background: "url(../../images/background.jpeg)",
+  };
 
-export default class Home extends React.Component {
-  render() {
-    return (
-      <table style={backgroundStyle}>
-        <tbody>
-          <tr style={{ verticalAlign: "middle", textAlign: "center" }}>
-            <td style={textStyle}>
-              <h1>BEM VINDO AO NE BRASIL</h1>
-            </td>
-          </tr>
-          <tr style={{ verticalAlign: "middle", textAlign: "center" }}>
-            <td>
-              <h1>
-                <Link to="/profile" style={linkStyle} activeStyle={activeLinkStyle}>
-                  INICIAR VISITA GUIADA
-                </Link>
-              </h1>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    );
-  }
+  const typography = {
+    width: "fit-content",
+    padding: "10px",
+    margin: "10px",
+    "background-color": "#1976d2",
+    "border-radius":"5px",
+    "background-opacity": "0.7",
+  };
+
+  return (
+    <div ref={mountRef}>
+      <Box style={back}>
+        <Box style={{ padding: "5px" }}>
+          <Box style={typography}>
+              <Typography variant="contained" style={styles}>
+                NAVIO ESCOLA 'BRASIL'
+              </Typography>
+          </Box>
+          <Box style={typography}>
+              <Typography style={styles}>VIRTUAL TOUR</Typography>
+          </Box>
+          <Box>
+          </Box>
+          <Box style={{padding:"5px"}}>
+            <Button style={styles} variant="contained">
+              Start
+            </Button>
+          </Box>
+        </Box>
+      </Box>
+    </div>
+  );
 }

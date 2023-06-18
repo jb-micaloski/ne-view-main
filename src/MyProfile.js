@@ -6,9 +6,12 @@ import "./App.css";
 declare var pannellum: any;
 
 const PANORAMAS = [
-  "https://i.imgur.com/0Inybmy.png",
-  "https://i.imgur.com/DMBxIow.png",
-  "https://i.imgur.com/LYXr1O6.png"
+  "../../images/comp/ne-beg-1.jpg",
+  "../../images/comp/ne-gm-1.jpg",
+  "../../images/comp/ne-gm-2.jpg",
+  "../../images/comp/ne-gm-3.jpg",
+  "../../images/comp/ne-gm-4.jpg",
+  "../../images/comp/ne-gm-5.jpg",
 ];
 
 export default function App() {
