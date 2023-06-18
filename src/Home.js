@@ -1,9 +1,7 @@
 import React from "react";
-import { Typography, Box, Button} from "@mui/material";
+import { Typography, Box, Button } from "@mui/material";
 
 export default function Home() {
-
-
   const styles = {
     "font-family": "'Baloo Bhaijaan', cursive",
     "font-size": "30px",
@@ -21,7 +19,7 @@ export default function Home() {
     padding: "10px",
     margin: "10px",
     "background-color": "#1976d2",
-    "border-radius":"5px",
+    "border-radius": "5px",
     "background-opacity": "0.7",
   };
 
@@ -30,16 +28,15 @@ export default function Home() {
       <Box style={back}>
         <Box style={{ padding: "5px" }}>
           <Box style={typography}>
-              <Typography variant="contained" style={styles}>
-                NAVIO ESCOLA 'BRASIL'
-              </Typography>
+            <Typography variant="contained" style={styles}>
+              NAVIO ESCOLA 'BRASIL'
+            </Typography>
           </Box>
           <Box style={typography}>
-              <Typography style={styles}>VIRTUAL TOUR</Typography>
+            <Typography style={styles}>VIRTUAL TOUR</Typography>
           </Box>
-          <Box>
-          </Box>
-          <Box style={{padding:"5px"}}>
+          <Box></Box>
+          <Box style={{ padding: "5px" }}>
             <Button style={styles} variant="contained">
               Start
             </Button>
